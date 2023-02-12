@@ -1,0 +1,75 @@
+.form-container {
+  padding: 0 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.label {
+  font-size: 20px;
+  font-weight: 400;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  line-height: 40px;
+}
+
+.required {
+  color: red;
+  margin-right: 4px;
+}
+
+.info-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+}
+
+.input {
+  height: 40px;
+  width: 100%;
+  margin-bottom: 28px;
+  border: 1px solid #616161;
+  padding: 0 10px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 18px;
+  &:focus {
+    outline: 2px solid rgb(27, 68, 234);
+    border: none;
+  }
+}
+
+.form-footer {
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 20px;
+  margin-bottom: 56px;
+  .button-cancel {
+    color: rgb(27, 68, 234);
+    width: 100px;
+    border: none;
+    background-color: white;
+    border-radius: 4px;
+    font-size: inherit;
+    cursor: pointer;
+  }
+  .button-confirm {
+    background-color: rgb(60, 94, 231);
+    color: white;
+    width: 100px;
+    border: none;
+    margin-left: 14px;
+    border-radius: 4px;
+    font-size: inherit;
+    cursor: pointer;
+  }
+}
+
+.error-info {
+  color: red;
+  font-size: 16px;
+  margin: 0;
+  margin-left: 7px;
+}

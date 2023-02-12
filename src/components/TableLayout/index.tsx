@@ -1,5 +1,5 @@
 import Tabs from "../Tabs";
-import ListHeader from "../ListHeader";
+import SDKList from "../List";
 import "./index.scss";
 
 const TableLayout = () => {
@@ -9,7 +9,7 @@ const TableLayout = () => {
         <Tabs />
       </aside>
       <div className="sdk-list">
-        <ListHeader />
+        <SDKList />
       </div>
     </div>
   );

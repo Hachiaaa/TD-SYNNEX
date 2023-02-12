@@ -1,14 +1,23 @@
 .tab {
   display: flex;
   align-items: center;
-}
-
-.icon {
-  width: 40px;
-  height: 40px;
-  margin-right: 7px;
-}
-
-.label {
-  font-weight: 500;
+  height: 70px;
+  border-bottom: 1px solid #d7d8d9;
+  cursor: pointer;
+  &-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 7px;
+  }
+  &-label {
+    font-weight: 500;
+    font-size: 20px;
+  }
+  &-active {
+    color: #3561f4;
+    border-left: 5px solid #3561f4;
+    .tab-icon {
+      fill: #3561f4;
+    }
+  }
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { ReactComponent as Icon } from "../../assets/ICON2_API.svg";
 import "./index.scss";
 
@@ -10,13 +10,18 @@ const tabs = [
 ];
 
 const Tabs = () => {
+  const [activeTabIndex, setActiveTabIndex] = useState(1);
   return (
     <div>
       {tabs.map((label, index) => {
         return (
-          <div className="tab" key={index}>
-            <Icon className="icon" />
-            <span className="label">{label}</span>
+          <div
+            className={`tab ${activeTabIndex === index ? "tab-active" : ""}`}
+            key={index}
+            onClick={() => setActiveTabIndex(index)}
+          >
+            <Icon className="tab-icon" />
+            <span className="tab-label">{label}</span>
           </div>
         );
       })}
