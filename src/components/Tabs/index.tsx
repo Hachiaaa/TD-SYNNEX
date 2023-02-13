@@ -21,7 +21,13 @@ const Tabs = () => {
             onClick={() => setActiveTabIndex(index)}
           >
             <Icon className="tab-icon" />
-            <span className="tab-label">{label}</span>
+            <span
+              className={`tab-label ${
+                activeTabIndex === index ? "label-active" : ""
+              }`}
+            >
+              {label}
+            </span>
           </div>
         );
       })}
